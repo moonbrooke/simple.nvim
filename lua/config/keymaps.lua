@@ -4,9 +4,9 @@ local opts = { noremap = true, silent = true }
 -- Disable spacebar default behavior
 map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- General
 map("n", "<C-s>", "<CMD>w<CR>", opts) -- Save file
@@ -15,10 +15,10 @@ map("n", "<leader>sn", "<CMD>noautocmd w<CR>", opts) -- Save without formatting
 map("n", "x", '"_x', opts) -- Delete char without copying
 map("n", "<leader>=", "ggVG=", opts) -- Format document
 
-vim.keymap.set('n', '<C-Left>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-Down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-vim.keymap.set('n', '<C-Right>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+map('n', '<C-Left>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+map('n', '<C-Down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+map('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+map('n', '<C-Right>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 
 -- Buffers
 map("n", "<Tab>", "<CMD>bnext<CR>", opts) -- Switch to next buffer
