@@ -20,8 +20,6 @@ vim.keymap.set('n', '<C-Down>', '<C-w><C-j>', { desc = 'Move focus to the lower 
 vim.keymap.set('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<C-Right>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 
--- vim.keymap.set('n', '\\', ':Ex<cr>', { desc = 'Open [E]xplorer' })
-
 -- Buffers
 map("n", "<Tab>", "<CMD>bnext<CR>", opts) -- Switch to next buffer
 map("n", "<S-Tab>", "<CMD>bprevious<CR>", opts) -- Switch to prev buffer
@@ -40,10 +38,3 @@ map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate +1<CR>", { desc = "Duplicate li
 map({ "v" }, "<C-S-A-Up>", "<CMD>VisualDuplicate -1<CR>", { desc = "Duplicate selection up" })
 map({ "v" }, "<C-S-A-Down>", "<CMD>VisualDuplicate +1<CR>", { desc = "Duplicate selection down" })
 
--- Visual Multi
-vim.g.VM_maps = {
-	["Select l"] = "<M-Right>",
-	["Select h"] = "<M-Left>",
-	["Goto Next"] = "",
-	["Goto Prev"] = "",
-}
