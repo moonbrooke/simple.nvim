@@ -37,10 +37,10 @@ Clone the repository:
 
 ```bash
 # Linux/Mac
-git clone https://github.com/moonbrooke/quickstart.nvim.git ~/.config/nvim
+git clone https://github.com/moonbrooke/simple.nvim.git ~/.config/nvim
 
 # Windows
-git clone https://github.com/moonbrooke/quickstart.nvim.git $env:LOCALAPPDATA\nvim
+git clone https://github.com/moonbrooke/simple.nvim.git $env:LOCALAPPDATA\nvim
 ```
 
 (Optional) Remove the .git folder:
