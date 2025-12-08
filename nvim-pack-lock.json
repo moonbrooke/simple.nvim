@@ -1,5 +1,10 @@
 {
   "plugins": {
+    "blink.cmp": {
+      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
     "neo-tree.nvim": {
       "rev": "f3df514fff2bdd4318127c40470984137f87b62e",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim",
