@@ -1,0 +1,6 @@
+require("plugins.tokyonight")
+require("plugins.neo-tree")
+-- require("plugins.snacks")
+-- require("plugins.whichkey")
+-- require("plugins.blink")
+-- require("plugins.treesitter")

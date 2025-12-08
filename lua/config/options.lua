@@ -1,61 +1,53 @@
--- vim.cmd("language en_US")
+local opt = vim.opt
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+opt.number = true -- Line numbers
+opt.relativenumber = false -- Relative line numbers
+opt.cursorline = true -- Highlight current line
+opt.wrap = false -- Don't wrap lines
+opt.scrolloff = 10 -- Keep 10 lines above/below cursor
+opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
-vim.g.have_nerd_font = true
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- Indentation
+opt.tabstop = 4 -- Tab width
+opt.shiftwidth = 4 -- Indent width
+opt.softtabstop = 4 -- Soft tab stop
+opt.expandtab = true -- Use spaces instead of tabs
+opt.smartindent = true -- Smart auto-indenting
+opt.autoindent = true -- Copy indent from current line
 
-local o = vim.opt
+-- Search settings
+opt.ignorecase = true -- Case insensitive search
+opt.smartcase = true -- Case sensitive if uppercase in search
+opt.hlsearch = true -- Don't highlight search results
+opt.incsearch = true -- Show matches as you type
 
-o.termguicolors = true
+-- Visual settings
+opt.termguicolors = true -- Enable 24-bit colors
+opt.signcolumn = "yes" -- Always show sign column
+opt.showmatch = true -- Highlight matching brackets
+opt.matchtime = 2 -- How long to show matching bracket
+opt.cmdheight = 1 -- Command line height
+opt.showmode = false -- Don't show mode in command line
+opt.completeopt = "menu,menuone,noselect"
 
-o.number = true
-o.relativenumber = false
-o.mouse = "a"
-o.showmode = false
+-- File handling
+opt.backup = false -- Don't create backup files
+opt.writebackup = false -- Don't create backup before writing
+opt.swapfile = false -- Don't create swap files
+opt.undofile = true -- Persistent undo
+opt.undolevels = 10000
+opt.undodir = vim.fn.expand("~/.vim/undodir") -- Undo directory
 
-vim.schedule(function()
-	o.clipboard = "unnamedplus"
-end)
+-- Behavior settings
+opt.backspace = "indent,eol,start" -- Better backspace behavior
+opt.iskeyword:append("-") -- Treat dash as part of word
+opt.path:append("**") -- include subdirectories in search
+opt.mouse = "a" -- Enable mouse support
+opt.encoding = "UTF-8" -- Set encoding
+opt.clipboard:append("unnamedplus") -- Use system clipboard
 
-o.fileencoding = "utf-8"
-o.title = true
-o.swapfile = false
-o.backup = false
-o.writebackup = false
-o.undofile = true
-o.backspace = "indent,eol,start"
-
-o.ignorecase = true
-o.smartcase = true
-o.signcolumn = "yes"
-
-o.updatetime = 250
-o.timeoutlen = 300
-
-o.splitright = true
-o.splitbelow = true
-
-o.list = true
-o.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-o.inccommand = "split"
-o.cursorline = true
-o.scrolloff = 10
-o.pumheight = 10
-o.completeopt = "menuone,noselect"
-
-o.autoindent = true
-o.breakindent = true
-o.wrap = false
-o.linebreak = true
-o.expandtab = true
-o.shiftwidth = 4
-o.tabstop = 4
-o.softtabstop = 4
-o.scrolloff = 4
-o.sidescrolloff = 8
--- o.showtabline = 2
-
-o.winborder = "solid" -- https://neovim.io/doc/user/options.html#"winborder"
+-- Create undo directory if it doesn't exist
+local undodir = vim.fn.expand("~/.vim/undodir")
+if vim.fn.isdirectory(undodir) == 0 then
+    vim.fn.mkdir(undodir, "p")
+end
