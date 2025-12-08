@@ -9,6 +9,10 @@
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
+    "nvim-autopairs": {
+      "rev": "7a2c97cccd60abc559344042fefb1d5a85b3e33b",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
     "nvim-web-devicons": {
       "rev": "8dcb311b0c92d460fac00eac706abd43d94d68af",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
