@@ -1,3 +1,8 @@
 vim.pack.add({ "https://github.com/folke/tokyonight.nvim", })
 
-vim.cmd[[colorscheme tokyonight]]
+require("tokyonight").setup({
+	style = "night",
+	transparent = true,
+})
+
+vim.cmd("colorscheme tokyonight")
