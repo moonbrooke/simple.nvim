@@ -5,6 +5,10 @@
             {
                 "language": ["typescript", "typescriptreact", "javascriptreact", "javascript"],
                 "path": "./typescript.json"
+            },
+            {
+                "language": ["html", "php"],
+                "path": "./html.json"
             }
         ]
     }
