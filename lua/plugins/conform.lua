@@ -16,6 +16,9 @@ require("conform").setup({
 	},
 	formatters = {
 		biome = { require_cwd = true },
+        prettier = {
+            args = { "--tab-width", "4" },
+        },
 	},
 	default_format_opts = {
 		lsp_format = "fallback",
