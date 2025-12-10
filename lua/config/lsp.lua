@@ -53,6 +53,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 -- Enable LSP servers for Neovim 0.11+
 vim.lsp.enable({
 	"lua_ls",
+	"html",
 })
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
