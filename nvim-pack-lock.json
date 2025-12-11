@@ -48,6 +48,10 @@
       "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
+    "presenting.nvim": {
+      "rev": "e78245995a09233e243bf48169b2f00dc76341f7",
+      "src": "https://github.com/sotte/presenting.nvim"
+    },
     "render-markdown.nvim": {
       "rev": "b2b135347e299ffbf7f4123fb7811899b0c9f4b8",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
