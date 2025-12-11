@@ -9,6 +9,10 @@
       "rev": "ffe26e8df8115c9665d24231f8a49fadb2d611ce",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "mini.starter": {
+      "rev": "8ee6ce6a4c9be47682516908557cc062c4d595a2",
+      "src": "https://github.com/nvim-mini/mini.starter"
+    },
     "neo-tree.nvim": {
       "rev": "f3df514fff2bdd4318127c40470984137f87b62e",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim",
