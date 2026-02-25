@@ -54,6 +54,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.lsp.enable({
 	"lua_ls",
 	"html",
+    "intelephense",
 })
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
