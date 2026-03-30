@@ -29,11 +29,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 				vim.lsp.inlay_hint.enable(true, { bufnr = args.buf })
 			end
 
-			if client:supports_method("textDocument/documentColor") then
-				vim.lsp.document_color.enable(true, args.buf, {
-					style = "background", -- 'background', 'foreground', or 'virtual'
-				})
-			end
+            if client:supports_method("textDocument/documentColor") then
+                vim.lsp.document_color.enable(true, { bufnr = args.buf }, {
+                    style = "background", -- 'background', 'foreground', or 'virtual'
+                })
+            end
 
 			for _, km in ipairs(default_keymaps) do
 				-- Only bind if there's no `has` requirement, or the server supports it
