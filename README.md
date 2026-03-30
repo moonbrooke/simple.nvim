@@ -6,7 +6,7 @@ Minimal Neovim config with LSP.
 
 Requirements:
 
-- [Neovim 0.11+](https://github.com/neovim/neovim/releases/)
+- [Neovim 0.12+](https://github.com/neovim/neovim/releases/)
 - Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 - Clipboard tool (xclip/xsel/win32yank or other depending on platform)
