@@ -55,6 +55,7 @@ vim.lsp.enable({
 	"lua_ls",
 	"html",
     "intelephense",
+    "clangd",
 })
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
