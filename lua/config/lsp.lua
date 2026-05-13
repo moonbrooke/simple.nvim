@@ -57,6 +57,7 @@ vim.lsp.enable({
     "intelephense",
     "clangd",
     "gopls",
+    "marksman",
 })
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
