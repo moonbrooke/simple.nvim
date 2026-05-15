@@ -12,12 +12,13 @@ Requirements:
 - If you use custom Linux setup you'll need a clipboard tool (ie. wl-clipboard/xclip/xsel)
 - [Nerd Fonts](https://www.nerdfonts.com/): Provides various symbols/icons
 - Language Setup:
-  - [clangd](https://clangd.llvm.org/installation.html)
-  - [gopls](https://go.dev/gopls/#installation)
+  - parser: [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter)
+  - c: [clangd](https://clangd.llvm.org/installation.html)
+  - go: [gopls](https://go.dev/gopls/#installation)
   - html: `npm i -g vscode-langservers-extracted`
-  - intelephense (php): `npm install -g intelephense`
-  - [lua_ls](https://luals.github.io/)
-  - [marksman](https://github.com/artempyanykh/marksman)
+  - php (intelephense): `npm install -g intelephense`
+  - lua: [lua_ls](https://luals.github.io/)
+  - markdown: [marksman](https://github.com/artempyanykh/marksman)
 
 Backup your current nvim folders (if any):
 
