@@ -7,15 +7,17 @@ Minimal Neovim config with LSP.
 Requirements:
 
 - [Neovim 0.12+](https://github.com/neovim/neovim/releases/)
-- Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
-- [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
-- Clipboard tool (xclip/xsel/win32yank or other depending on platform)
-- A [Nerd Font](https://www.nerdfonts.com/): Provides various symbols/icons
-  - if you have it, set `vim.g.have_nerd_font` to true
+- Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`), `ripgrep`
+- Needed for LSP setup: [nodejs](https://nodejs.org/en), [golang](https://go.dev/)
+- If you use custom Linux setup you'll need a clipboard tool (ie. wl-clipboard/xclip/xsel)
+- [Nerd Fonts](https://www.nerdfonts.com/): Provides various symbols/icons
 - Language Setup:
-  - If you want to write Typescript, you need `npm`
-  - If you want to write Golang, you will need `go`
-  - etc.
+  - [clangd](https://clangd.llvm.org/installation.html)
+  - [gopls](https://go.dev/gopls/#installation)
+  - html: `npm i -g vscode-langservers-extracted`
+  - intelephense (php): `npm install -g intelephense`
+  - [lua_ls](https://luals.github.io/)
+  - [marksman](https://github.com/artempyanykh/marksman)
 
 Backup your current nvim folders (if any):
 
