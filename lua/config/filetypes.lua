@@ -3,3 +3,9 @@ vim.filetype.add({
         njk = "html",
     },
 })
+
+vim.filetype.add({
+    pattern = {
+        ["^[^.]+$"] = "bash",
+    },
+})
